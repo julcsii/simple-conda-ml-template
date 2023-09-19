@@ -22,9 +22,12 @@
 
 ## Experiments
 
-Run `mlflow ui` to view the tracked experiments.
 To change the default tracking location to another folder you can use put the following to your `.env` file:
 `MLFLOW_TRACKING_URI="file:///home/<path>/mlruns"`
+
+To see the experiments:
+1. (Optional) Load your environment variable from the .env file: `source .env`
+2. Run `mlflow ui --backend-store-uri $MLFLOW_TRCKING_URI` to view the tracked experiments. (If you did not change the MLFLOW_TRCKING_URI, just run `mlflow ui`)
 
 ## Evaluation
 
