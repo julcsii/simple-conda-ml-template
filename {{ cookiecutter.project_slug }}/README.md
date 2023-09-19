@@ -3,7 +3,7 @@
 ## Overview
 
 ## Requirements
- * Python 10, pip
+ * min Python 3.10, pip
  * Poetry
 
 ## Setup
