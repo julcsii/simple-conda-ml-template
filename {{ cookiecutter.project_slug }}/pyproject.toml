@@ -3,6 +3,7 @@ name = "{{ cookiecutter.project_slug }}"
 version = "0.1.0"
 authors = ["{{ cookiecutter.authors }}"]
 readme = "README.md"
+description = "{{ cookiecutter.project_description }}"
 
 [tool.poetry.dependencies]
 python = "^3.10"
