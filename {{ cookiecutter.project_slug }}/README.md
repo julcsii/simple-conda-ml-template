@@ -7,10 +7,12 @@
  * Poetry
 
 ## Setup
-1. Install dependencies: `poetry install`
+1. Install dependencies: `poetry install` (This will create a poetry.lock file, which contains exact versions of the dependencies and should be committed to the repo.)
 2. Activate environment: `poetry shell`
 3. Update configs in `config.yaml`
 4. Start working with the notebooks: run Jupyter lab: `jupyter lab` (or use your IDE to run the notebooks)
+
+To add new dependencies run `poetry add <pkg>` update dependencies run `poetry update`.
 
 ## Problem formulation
 
