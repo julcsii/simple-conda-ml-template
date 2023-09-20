@@ -1,8 +1,11 @@
 input:
   folder: ./data/in
   columns_to_keep:
-    - col_a
-    - tbd
+    - alcohol
+    - magnesium
+    - flavanoids
+    - color_intensity
+    - target
 
 train:
   experiment_name: default
@@ -18,5 +21,3 @@ logging:
   date_format: '%Y-%m-%d %H:%M:%S'
   format: '[%(asctime)s] %(message)s'
   level: INFO
-
-
