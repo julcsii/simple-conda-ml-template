@@ -1,5 +1,5 @@
-# simple-ml-template
-Cookiecutter template to kick off your machine learning experiments with MLflow, Jupyter and more.
+# simple-conda-ml-template
+Cookiecutter template to kick off your machine learning experiments with conda, MLflow, Jupyter and more.
 
 ## About this template
 
@@ -23,7 +23,7 @@ Tools used in the generated project:
 * cruft (tested with 2.15, see installation notes [here](https://cruft.github.io/cruft/#installation))
 
 ## How to generate a project with this template
-`cruft create git@github.com:julcsii/simple-ml-template.git`
+`cruft create git@github.com:julcsii/simple-conda-ml-template.git`
 
 ## How to update downstream projects
 `cruft update`
