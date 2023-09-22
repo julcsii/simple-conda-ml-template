@@ -8,8 +8,9 @@ The template makes it easy to kick off simple machine learning experiments (xgbo
 It contains an example notebook to train and evaluate machine learning models compatible with the sklearn API.
 
 Tools used in the generated project:
-* [Poetry](https://python-poetry.org/docs/) for dependency and environment management.
-  * Basic data science dependencies are included (see in the pyproject.toml)
+* [conda](https://docs.conda.io/en/latest/) for environment management.
+* [conda-lock](https://conda.github.io/conda-lock/) for dependency management.
+  * Basic data science dependencies are included (see in the environment.yaml)
 * [Omegaconf](https://omegaconf.readthedocs.io/en/2.3_branch/index.html) for configuration management
 * [Jupyter](https://docs.jupyter.org) for running notebooks 
 * [Mlflow](https://mlflow.org/docs/latest/index.html) to track experiments

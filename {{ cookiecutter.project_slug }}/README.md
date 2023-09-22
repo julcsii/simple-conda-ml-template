@@ -2,17 +2,22 @@
 
 ## Overview
 
+{{ cookiecutter.project_description }}
+
 ## Requirements
- * min Python 3.10, pip
- * Poetry
+ * min Python 3.10,
+ * conda, conda-lock
 
 ## Setup
-1. Install dependencies: `poetry install` (This will create a poetry.lock file, which contains exact versions of the dependencies and should be committed to the repo.)
-2. Activate environment: `poetry shell`
+
+1. Create conda env and activate it: `conda create -n {{ cookiecutter.project_slug }} python=3.9`
+2. Install dependencies: `conda-lock install conda-lock.yml` 
 3. Update configs in `config.yaml`
 4. Start working with the notebooks: run Jupyter lab: `jupyter lab` (or use your IDE to run the notebooks)
 
-To add new dependencies run `poetry add <pkg>` update dependencies run `poetry update`.
+Update dependencies:
+1. Update version in `environment.yaml`
+2. Recreate lock file:  `conda-lock -f environment.yml`
 
 ## Problem formulation
 
