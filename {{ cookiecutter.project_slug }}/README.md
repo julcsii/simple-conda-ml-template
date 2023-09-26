@@ -10,14 +10,15 @@
 
 ## Setup
 
-1. Create conda env and activate it: `conda create -n {{ cookiecutter.project_slug }} python=3.9`
-2. Install dependencies: `conda-lock install conda-lock.yml` 
-3. Update configs in `config.yaml`
-4. Start working with the notebooks: run Jupyter lab: `jupyter lab` (or use your IDE to run the notebooks)
+1. (Optional) Create lock file if not present: `conda-lock -f environment.yml --kind env` 
+2. Use conda to create environment: `conda env create -n {{ cookiecutter.conda_env_name }} -f conda-linux-64.lock.yaml`
+3. Activate environment: `conda activate {{ cookiecutter.conda_env_name }}`
+4. Update configs in `config.yaml`
+5. Start working with the notebooks: run Jupyter lab: `jupyter lab` (or use your IDE to run the notebooks)
 
-Update dependencies:
-1. Update version in `environment.yaml`
-2. Recreate lock file:  `conda-lock -f environment.yml`
+Update dependencies: `conda-lock --update <package>`
+To re-solve the entire environment, e.g. after changing a version constraint in the source file:
+`conda-lock -f environment.yaml --lockfile conda-linux-64.lock.yml`
 
 ## Problem formulation
 
